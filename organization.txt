@@ -1,0 +1,21 @@
+author
+	has_many :comments
+	has_many :posts
+
+comment
+	belongs_to :author
+	belongs_to :post
+
+
+post
+	has_many :tags, :through => :post_tags
+	belongs_to :author
+	has_many :comments
+
+
+post_tag
+	belongs_to :post
+	belongs_to :tag
+
+tag
+	has_many :posts, :through => :post_tags
