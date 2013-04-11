@@ -1,0 +1,13 @@
+<h3>Posts</h3>
+
+<%if @posts[0] == nil %>
+	<p>no posts!</p>
+<%elsif @posts.length == 1%>
+		<p><%= @posts[0].body%></p>
+<%else%>
+	<ul>
+		<% @posts.each do |p| %>
+	 		<li><%= p.body%></li>
+		<% end %>
+	</ul>
+<%end%>

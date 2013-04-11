@@ -14,6 +14,7 @@ source 'https://rubygems.org'
 gem 'rake'
 
 # Component requirements
+gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'erubis', '~> 2.7.0'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
 gem 'sqlite3'
@@ -34,3 +35,4 @@ gem 'padrino', '0.11.1'
 # end
 gem 'database_cleaner'
 gem 'pry'
+gem 'bcrypt-ruby'
